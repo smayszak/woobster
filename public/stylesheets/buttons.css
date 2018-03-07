@@ -1,0 +1,16 @@
+.actionbutton{
+  margin:20px;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.innerButton{
+  width:200px;
+  padding: 10px;
+  border-radius: 10pt;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 10px;
+  background-color: chartreuse;
+  color: darkblue;
+}

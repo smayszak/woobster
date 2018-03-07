@@ -1,0 +1,22 @@
+body {
+  padding: 10px;
+  font: 12px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: darkslategray;
+  color: white;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+}
+
+.header p {
+  text-align: center;
+}
+.header a {
+  text-align: center;
+  font: 12px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: white;
+}
+
+

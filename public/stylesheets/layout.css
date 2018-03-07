@@ -1,0 +1,30 @@
+.stepblock{
+  /*display: table-cell;*/
+  padding:5px;
+  background-color: slateblue;
+  border: seashell 1px solid;
+}
+
+.stepblock h1{
+  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+  text-decoration: underline;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;  
+}
+.stepblock p{
+  font: 12px "Lucida Grande", Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+.stepblock span{
+  font: 12px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin:5px;
+  display: inline-block;
+  width:200px;
+}
+
+fieldset div{
+  background-color: steelblue;
+  border-top:solid 1px slateblue;
+}

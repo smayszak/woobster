@@ -1,0 +1,53 @@
+extends layout
+
+block content
+  form(action="/groomer", method="post")
+    div(class="stepblock")
+      fieldset(id="animalclass")
+        h1 What exactly are we dealing with here?
+        div  
+          span(for="dogfield") Dog
+          input(id="dogfield", type="radio", value="Dog", name="animalclass")
+        div 
+          span(for="catfield") Cat
+          input(id="catfield", type="radio", value="Cat", name="animalclass")
+        div 
+          span(for="wingField") Winged
+          input(id="wingField", type="radio", value="winged", name="animalclass")
+        div 
+          span(for="otherlegsfield") Other - leg based
+          input(id="otherlegsfield", type="radio", value="otherlegs", name="animalclass")
+        div 
+          span(for="otherfinsfield") Other - fin/gill/legless
+          input(id="otherfinsfield", type="radio", value="otherfins", name="animalclass") 
+      fieldset(id="animalFuzz") 
+        h1 If I were to pet it that little guy, what would i feel:
+        div 
+          span(for="hairField") Hair
+          input(id="hairField", type="radio", value="hair", name="animalFuzz")
+        div 
+          span(for="furrield") Furr
+          input(id="furrField", type="radio", value="furr", name="animalFuzz")  
+        div 
+          span(for="skinField") Smooth hairless skin
+          input(id="skinField", type="radio", value="skin", name="animalFuzz")
+        div 
+          span(for="scaleField") Scaley flakey skin
+          input(id="scaleField", type="radio", value="scale", name="animalFuzz")
+        div 
+          span(for="scaleField") Scaley flakey skin
+          input(id="scaleField", type="radio", value="scale", name="animalFuzz")
+      fieldset(id="otherProperties") 
+        h1 A few other bits that will help
+        div
+          span(for="dangerRange") Danger range:
+          input(type="range", name="deathRange", id="dangerRange")
+        div
+          span(for="sizeRange") Size (relative)
+          input(type="range", name="sizeRange", id="sizeRange")  
+        div
+          span(for="fancy") Would you consider your pet, fancy? (check for yes)
+          input(type="checkbox", name="fancy", id="fancyField") 
+    div(class="actionbutton") 
+      input(class="innerButton", type="submit", value="Generate")
+

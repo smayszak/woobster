@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  div(id="pleaseWaitSection", style="display:show")
+    p(name="udating") masterpiece being created
+  div(id="showSelection", style="display:none")
+    p(name="finished") done
+
+  script.
+    var userSelections = !{JSON.stringify(pAttributes).replace(/<\//g, "<\\/")}
+    serviceClient.getName(userSelections, "pleaseWaitSection", "showSelection");
